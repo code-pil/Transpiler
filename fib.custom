@@ -1,0 +1,35 @@
+PRINT "How many fibonacci numbers do you want?"
+INPUT nums
+PRINT ""
+
+LET a = 0
+LET b = 1
+
+WHILE nums > 0 REPEAT
+    PRINT a
+    LET c = a + b
+    LET a = b
+    LET b = c
+    LET nums = nums - 1
+ENDWHILE
+
+FOR LET i = 0 TILL i < a OVER LET i = i + 1
+	PRINT a
+    LET c = a + b
+    LET a = b
+    LET b = c
+    LET nums = nums - 1
+ENDFOR
+
+LET d = 5
+
+IF a == 0 THEN
+    PRINT "a == 0"
+    IF d == 0 THEN
+    	PRINT "hello"
+    ENDIF
+ELIF b == 0 THEN
+    PRINT "b == 0"
+ELSE
+    PRINT "else"
+ENDIF
